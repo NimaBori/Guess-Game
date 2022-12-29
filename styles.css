@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(130deg, rgb(255, 219, 152) 30%, rgb(0, 255, 221) 10%, rgb(0, 0, 0) 75%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;  
+}
+
+h1, h4 {
+  text-transform: capitalize;
+  margin: 0;
+}
+
+.start-game {  
+  background-color: rgb(255, 219, 152);
+  width: 400px;
+  height: 280px;
+  padding: 15px 5px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  justify-content: space-between;
+  box-shadow: 1px 1px 7px black;
+}
+
+.start-game .title {
+  margin-bottom: 15px;
+  color: crimson;    
+}
+
+.start-game .title span {
+  color: green;
+  font-weight: 500;
+}
+
+.modes-btns-container {  
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.game-player {  
+  background-color: rgb(255, 219, 152);
+  padding: 5px;
+  border-radius: 15px;
+  display: none;
+  flex-direction: column;
+  align-items: center;  
+  row-gap: 25px;
+  height: 370px;
+  width: 300px;
+  position: relative;
+  box-shadow: 1px 1px 7px black;
+
+}
+
+.guide-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 14px;
+  font-weight: 700;
+  border-bottom: 2px solid crimson;
+}
+
+.guide-container .minimum {
+  border-right: 2px solid crimson;
+  padding-right: 5px;
+}
+
+.guide-container .maximum {
+  padding-left: 5px;
+}
+
+.game-player input {
+  width: 60px;
+  height: 65px;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 500;
+  background-color:  black;
+  color: wheat;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 1px 1px 7px black;
+
+}
+
+.game-player input:focus {
+  outline: none;
+}
+
+.hint {
+  text-decoration: underline;
+  font-size: 16px;
+  font-weight: 700;
+  color: crimson;
+  text-shadow: 1px 1px 2px white;
+}
+
+.left-lifes {  
+  position: absolute;  
+  bottom: 0;  
+  padding: 8px 13px;
+  text-transform: uppercase;  
+  font-size: 18px;
+  background-color: orange;  
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;  
+  color: white;
+  text-shadow: 2px 2px 1px rgb(0, 92, 46);
+}
+
+.finish-icon img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;  ;
+}
+
+.clicked {
+  background-color: gray;
+}
+
+.result-section {
+  display: none;
+}
+
+.result-section-show {
+  background-color: rgb(255, 219, 152);
+  padding: 15px 5px;
+  border-radius: 15px;
+  height: 300px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 1px 1px 7px black;
+}
+
+.finish-icon {
+  width: 100px;
+  height: 100px;
+}
+
+.result, .final-left-lifes {
+  font-size: 26px;
+  font-weight: 500;
+  color: crimson;
+  text-shadow: 2px 2px 3px black;
+}
